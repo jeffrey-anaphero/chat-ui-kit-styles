@@ -1,13 +1,14 @@
-@import "../variables";
-@import "../helpers/mixins";
+@import '../variables';
+@import '../helpers/mixins';
 
 .#{$prefix}-typing-indicator {
   box-sizing: content-box;
   font-size: $typing-indicator-font-size;
   font-family: $typing-indicator-font-family;
-  @include flex-row;
+  display: flex;
+  flex-direction: row;
+
   align-items: stretch;
-  
   &__indicator {
     box-sizing: inherit;
     background-color: $typing-indicator-indicator-bg-color;
